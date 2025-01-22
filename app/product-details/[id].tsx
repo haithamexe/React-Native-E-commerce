@@ -27,7 +27,7 @@ const ProductDetails = (props: Props) => {
 
   const getProductDetails = async () => {
     try {
-      const URL = `http://192.168.2.142:8000/products/${id}`;
+      const URL = `http://localhost:8000/products/${id}`;
       const response = await axios.get(URL);
 
       setProduct(response.data);
